@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Flight_Reservation/static/css/main.d66168e0.css",
+    "main.js": "/Flight_Reservation/static/js/main.23e0d9fb.js",
+    "static/js/787.c46fed99.chunk.js": "/Flight_Reservation/static/js/787.c46fed99.chunk.js",
+    "static/media/info2.jpg": "/Flight_Reservation/static/media/info2.a98cec4cc44016fa0931.jpg",
+    "static/media/homeImage3.jpg": "/Flight_Reservation/static/media/homeImage3.cb847584a052563a55c2.jpg",
+    "static/media/city.jpg": "/Flight_Reservation/static/media/city.8fd23f0a15f2244d6397.jpg",
+    "static/media/paypal.png": "/Flight_Reservation/static/media/paypal.f82b174c1ffa354b2dc5.png",
+    "static/media/newsLetter.png": "/Flight_Reservation/static/media/newsLetter.63f9ce376f5f22d78e8b.png",
+    "static/media/visa.png": "/Flight_Reservation/static/media/visa.0a3d4f5c944e121886be.png",
+    "static/media/logo.png": "/Flight_Reservation/static/media/logo.d9ba078f46086673af02.png",
+    "static/media/logo3.png": "/Flight_Reservation/static/media/logo3.ecc357ae97bba7b4a5ef.png",
+    "static/media/logo2.png": "/Flight_Reservation/static/media/logo2.32e1bcdb58ed9eeab6b1.png",
+    "static/media/Mastercard.png": "/Flight_Reservation/static/media/Mastercard.b3c9de6bff53d598b849.png",
+    "static/media/airp.jpg": "/Flight_Reservation/static/media/airp.42f02c91d7e23bf23cdd.jpg",
+    "index.html": "/Flight_Reservation/index.html",
+    "main.d66168e0.css.map": "/Flight_Reservation/static/css/main.d66168e0.css.map",
+    "main.23e0d9fb.js.map": "/Flight_Reservation/static/js/main.23e0d9fb.js.map",
+    "787.c46fed99.chunk.js.map": "/Flight_Reservation/static/js/787.c46fed99.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d66168e0.css",
+    "static/js/main.23e0d9fb.js"
+  ]
+}
