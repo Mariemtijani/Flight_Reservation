@@ -1,0 +1,78 @@
+.background {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* padding: 64px 32px; */
+}
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+    border-radius: 16px;
+    
+}
+
+.articles article {
+    max-width: 320px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    transition: transform 0.4s ease-in-out;
+    width: 250px;
+}
+.articles article:hover {
+    transform: translateY(-8px);
+}
+.articles article span {
+    display: inline-flex;
+    color: #708090;
+}
+.articles article img {
+    width: 100%;
+    transform-origin: center;
+    transition: transform 0.6 ease-in-out;
+
+}
+.article-info {
+    padding-left: 16px;
+    padding-bottom: 10px;
+    background-color: white;
+
+}
+.article-info .icon {
+    position: absolute;
+    left: 88%;
+    top: 79%;
+   
+}
+.article-info .icon2 {
+    color: rgb(242, 80, 80);
+}
+.article-info .none {
+    display: none;
+}
+.articles figure {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.articles figure img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    
+
+}
+/* .articles article:hover img {
+    transform: scale(1.5);
+} */

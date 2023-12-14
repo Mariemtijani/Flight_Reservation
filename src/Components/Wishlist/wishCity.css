@@ -1,0 +1,99 @@
+ 
+
+.wishlistContainer {
+   margin-top: 100px;
+   margin-left: 80px;
+   margin-right: 80px;
+   height: 100%;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+.head button {
+    margin-top: 20px;
+}
+
+.city-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.cities {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+    border-radius: 16px;
+}
+.cities article {
+    width: 1000px;
+    height: 150px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.cities article:hover {
+    transform: translateY(-8px);
+}
+.city-info span {
+    display: inline-flex;
+    color: #708090;
+}
+.cities article img {
+    width: 250px;
+    transform-origin: center;
+    transition: transform 0.6 ease-in-out;
+
+}
+.city-info {
+    padding-left: 16px;
+    padding-bottom: 10px;
+    background-color: white;
+
+}
+.city-info button {
+    background-color: #708090;
+    margin:20px 20px 20px 0px;
+    display: block;
+}
+.city-info .icon {
+    position: absolute;
+    top: 15%;
+    left: 96%;
+    color: #708090;
+}
+.city-info .icon:hover  {
+    color: #40B5AD;
+}
+
+.alert {
+    background-color: #FFF5EE;
+    padding: 10px;
+    text-align: start;
+    width: 1000px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 100px;
+
+    
+}
+.alert p {
+    color: #FF7F50;
+}
+
+.alert .link {
+    text-decoration: none;
+    color: #40B5AD;
+}

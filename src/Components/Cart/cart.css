@@ -1,0 +1,31 @@
+.cartContainer {
+    margin-top: 100px;
+    
+}
+.cartContainer h2 {
+    margin-left: 100px;
+    font-size: 40px;
+}
+
+.cartContainer h4 {
+    color: #3d5cb8;
+    margin-left: 100px;
+}
+.ticketContainer {
+    color: #3d5cb8;
+    font-weight: 700;
+    font-size: 23px;
+    margin-top: 4px;
+    margin-left: 100px;
+    width: 120px;
+}
+.deletBtn .btn{
+    margin-top: 50px;
+}
+
+.cartContainer .btn2 {
+    background-color: #3d5cb8;
+    margin-left: 1050px;
+    margin-top: 40px;
+    width: 200px;
+}

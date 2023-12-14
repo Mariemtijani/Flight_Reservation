@@ -1,0 +1,234 @@
+.containerResult {
+    margin-top: 75px;
+}
+
+.containerResult h2 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+/* header reservation style ********** */
+
+.resHeaderContainer {
+    background-color: #36454F;
+    position: fixed;
+    width: 100%;
+    padding: 0px 0px 10px 20px;
+    z-index: 2;
+    margin-top: 0px;
+}
+
+.choice {
+    display: flex;
+    justify-content:start;
+    gap: 20px;
+    margin-left: 120px;
+}
+.choice h4 {
+    color: white;
+    font-size: 25px;
+}
+.choice .icon {
+    color: #40B5AD;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.tripDate {
+    margin-left: 120px;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    
+}
+.tripDate span{
+    color: #C0C0C0;
+    font-weight: 700;
+   
+}
+
+.pasCount {
+    margin-top: -7px;
+    display: flex;
+    gap: 5px;
+}
+.pasCount .icon {
+    color: #C0C0C0;
+    font-size: 20px;
+    margin-top: 3px;
+}
+.pasCount .count {
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+/* result body style ************ */
+.resBodyContainer {
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+.depart  {
+    margin-left: 130px;
+}
+.return {
+    margin-left: 130px;
+    margin-top: 50px;
+}
+.depart h4 {
+    color: #3d5cb8;
+    font-weight: 700;
+    font-size: 23px;
+    margin-top: 4px;
+    margin-left: 40px;
+}
+
+.return h4 {
+    color: #3d5cb8;
+    font-weight: 700;
+    font-size: 23px;
+    margin-top: 4px;
+    margin-left: 40px;
+}
+
+.depart h4 .icon {
+    position: absolute;
+    left: 126px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.return h4 .icon {
+    position: absolute;
+    left: 126px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.ticket {
+    height: 120px;
+    width: 1160px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 30px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px -3px, /* top shadow */
+    rgba(0, 0, 0, 0.1) 0px -5px 10px -3px, /* bottom shadow */
+    rgba(0, 0, 0, 0.1) 5px 0px 10px -3px, /* right shadow */
+    rgba(0, 0, 0, 0.1) -5px 0px 10px -3px; /* left shadow */
+
+}
+
+.timeSection {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    /* width: 600px; */
+    border-right: dotted 1px #C0C0C0;
+    border-left: dotted 1px #C0C0C0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 80px;
+
+}
+.midle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.timeSection .midle .line1 {
+    width: 150px;
+    background-color: #ccc;
+    height: 2px;
+}
+.midle .icon {
+    color: #40B5AD;
+    font-size: 20px;
+}
+
+.dateSection {
+    align-items: center;
+    color: #C0C0C0;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 35px;
+}
+.timeDepart{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.timeDepart h6 {
+    color: #36454F;
+    font-size: 30px;
+}
+
+.timeDepart span {
+    color: #ccc;
+    
+}
+
+.priceSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.price {
+    margin-top: 45px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.price .old {
+    margin-right: 10px;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: #36454F;
+}
+.price .new {
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(223, 98, 98);
+   
+}
+
+.btnSelect {
+    margin-top: 26px;
+}
+.btnSelect button {
+    width: 160px;
+}
+
+.btnSelect p {
+  background-color: #F0FFFF;
+  color: #3d5cb8;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 2px 0px 2px 2px;
+  margin-bottom: 10px;
+}
+.class {
+    display: block;
+    margin-left: 60px;
+    color: #36454F;
+
+}
+.noMatch {
+    color: #3d5cb8;
+    font-size: 30px;
+    margin-left: 200px;
+}
+.choosen {
+    color: #40B5AD;
+    margin-left: 20px;
+    font-weight: 700;
+}
+.none {
+    display: none;
+}
