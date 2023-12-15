@@ -17,14 +17,14 @@ const App = () => {
       <Nav />
 
       <Routes>
-        <Route path='/' element = {<Home />}/>
-        <Route path='/Flight_Reservation/wishlist' element = {<Wishlist />}/>
-        <Route path='/Flight_Reservation/signIn' element = {<SignIn />}/>
-        <Route path='/Flight_Reservation/explore' element = {<Explore />}/>
-        <Route path='/Flight_Reservation/cart' element = {<Cart />}/>
-        <Route path='/Flight_Reservation/paiment/:total' element = {<Paiment />}/>
-        <Route path='/Flight_Reservation/paimentInfo' element = {<PaimentInfo />}/>
-        <Route path='/Flight_Reservation/result/:selectedValue/:child/:adults/:cityDepart/:cityReturn/:departDate/:returnDate/:classe/:bag' element = {<Result />} />
+        <Route path='/Flight_Reservation' element = {<Home />}/>
+        <Route path='/wishlist' element = {<Wishlist />}/>
+        <Route path='/signIn' element = {<SignIn />}/>
+        <Route path='/explore' element = {<Explore />}/>
+        <Route path='/cart' element = {<Cart />}/>
+        <Route path='/paiment/:total' element = {<Paiment />}/>
+        <Route path='/paimentInfo' element = {<PaimentInfo />}/>
+        <Route path='/result/:selectedValue/:child/:adults/:cityDepart/:cityReturn/:departDate/:returnDate/:classe/:bag' element = {<Result />} />
 
       </Routes>
       

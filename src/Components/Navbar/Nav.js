@@ -44,7 +44,7 @@ const Nav = () => {
             <div className={active}>
               <MdCancel className='icon cancel' onClick={removeMenu}/>
                 <ul className="menu flex">
-                    <li  onClick={removeMenu}><Link to='/' className='navLink'>home</Link></li>
+                    <li  onClick={removeMenu}><Link to='/Flight_Reservation' className='navLink'>home</Link></li>
                     <li  onClick={removeMenu}><Link to='/Flight_Reservation/explore' className='navLink'>explore</Link></li>
                     <li  onClick={removeMenu}><Link to='/Flight_Reservation/signIn' className='navLink'>sign in</Link></li>
                     <li  onClick={removeMenu}><Link to='/Flight_Reservation/wishlist' className='navLink'><FaHeart className='icon'/></Link></li>
