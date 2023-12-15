@@ -17,7 +17,7 @@ const App = () => {
       <Nav />
 
       <Routes>
-        <Route path='/Flight_Reservation' element = {<Home />}/>
+        <Route path='/' element = {<Home />}/>
         <Route path='/wishlist' element = {<Wishlist />}/>
         <Route path='/signIn' element = {<SignIn />}/>
         <Route path='/explore' element = {<Explore />}/>
