@@ -44,11 +44,11 @@ const Nav = () => {
             <div className={active}>
               <MdCancel className='icon cancel' onClick={removeMenu}/>
                 <ul className="menu flex">
-                    <li  onClick={removeMenu}><Link to='/' className='navLink'>home</Link></li>
-                    <li  onClick={removeMenu}><Link to='/explore' className='navLink'>explore</Link></li>
-                    <li  onClick={removeMenu}><Link to='/signIn' className='navLink'>sign in</Link></li>
-                    <li  onClick={removeMenu}><Link to='/wishlist' className='navLink'><FaHeart className='icon'/></Link></li>
-                    <li  onClick={removeMenu}><Link to='/cart' className='navLink'><FaShoppingCart className='icon'/></Link></li>
+                    <li  onClick={removeMenu}><Link to='/Flight_Reservation' className='navLink'>home</Link></li>
+                    <li  onClick={removeMenu}><Link to='/Flight_Reservation/explore' className='navLink'>explore</Link></li>
+                    <li  onClick={removeMenu}><Link to='/Flight_Reservation/signIn' className='navLink'>sign in</Link></li>
+                    <li  onClick={removeMenu}><Link to='/Flight_Reservation/wishlist' className='navLink'><FaHeart className='icon'/></Link></li>
+                    <li  onClick={removeMenu}><Link to='/Flight_Reservation/cart' className='navLink'><FaShoppingCart className='icon'/></Link></li>
                  </ul>
                  {tickets.length > 0 ? 
                  (<div className="notification">{tickets.length}</div>) : (null)
