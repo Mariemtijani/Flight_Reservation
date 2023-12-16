@@ -57,7 +57,7 @@ export default function Return(props) {
 
                     <div className="btnSelect">
                         <p>{props.seats} seats left at this price</p>
-                        <button className={isSelected ? 'none' : 'btn'} onClick={toggleSelected}>Select</button>
+                        <button className={isSelected ? 'none' : 'btn'} onClick={toggleSelected}>Book Now</button>
                         <span className={isSelected ? 'choosen' : 'none'}>Choosen Flight</span>
                     </div>
 
