@@ -1,0 +1,57 @@
+.container-indicator {
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    width: 80%;
+    
+}
+.first-line {
+    top: 50%;
+    position: absolute;
+   height: 5px;
+    background: #f1f1f1;
+    width: 100%;
+
+}
+.second-line {
+    top: 50%;
+    position: absolute;
+   height: 5px;
+    background: #40B5AD;
+
+}
+.upper-line {
+    z-index: 10;
+    transition: width 1s ease-in-out;
+    
+}
+
+.container-step {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+.bloc-step {
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #36454F;
+}
+.bloc-step2 {
+    background-color: #40B5AD;
+    color: white;
+    transition: background-color 3.5s ease-in-out;
+}
+
+
+
+.container-indicator h6 {
+    font-size: 19px;
+}

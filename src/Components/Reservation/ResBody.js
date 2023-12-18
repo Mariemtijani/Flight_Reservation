@@ -35,11 +35,12 @@ export default function ResBody() {
     (data) => {
       const isMatching =
         data.departCity === cityDepart &&
-        data.returnCity.trim() === cityReturn.trim() &&
-        data.departDetails.class.toLowerCase() === classe.toLowerCase() &&
-        data.departDetails.seats >= Number(child) + Number(adults) &&
-        data.departDetails.date.trim() === departDate.trim() &&
-        (selectedValue !== 'Return' || data.returnDetails.date.trim() === returnDate.trim());
+        data.returnCity.trim() === cityReturn.trim()
+        // &&
+        // data.departDetails.class.toLowerCase() === classe.toLowerCase() &&
+        // data.departDetails.seats >= Number(child) + Number(adults) &&
+        // data.departDetails.date.trim() === departDate.trim() &&
+        // (selectedValue !== 'Return' || data.returnDetails.date.trim() === returnDate.trim());
 
       return isMatching;
     }

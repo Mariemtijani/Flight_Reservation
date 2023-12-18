@@ -1,82 +1,59 @@
-import React , {useState} from 'react';
-import MasterCard from './Imgs/Mastercard.png'
-import visa from './Imgs/visa.png';
-import paypal from './Imgs/paypal.png';
+import React from 'react'
 import './paimentInfo.css'
-import FlightInfo from './FlightInfo';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom'
+import FlightInfo from './FlightInfo'
+export default function PaimentInfo() {
 
-export default function PaymentInfo() {
-
-
-
-  const [payType, setPayType] = useState();
-
+  const {total} = useParams()
   return (
-   <div className='flex' style={{gap:'100px'}}>
-
-   
-     <div className='paymentInfo'>
-      <h2>Payment Form</h2>
-        <form action="">
-          <div className='methods'>
-            <div className="master">
-                <input type="radio" name="payment" id=""  value='master card'
-                onClick={(e) => {setPayType(e.target.value)}}/>
-                <img src={MasterCard} alt="" />
-            </div>
-
-               <div className="visa">
-                    <input type="radio" name="payment" id=""  value='visa'
-                  onClick={(e) => {setPayType(e.target.value)}}/>
-                  <img src={visa} alt="" />
-               </div>
-
-              <div className="paypal">
-              <input type="radio" name="payment" id=""  value='paypal'
-             onClick={(e) => {setPayType(e.target.value)}}/>
-             <img src={paypal} alt="" />
+ 
+  <div className="modal">
+     
+    <div className="modal__container">
+   <FlightInfo />
+      <div className="modal__featured">
+        
+      <div className="modal__content">
+        <h2>Your payment details</h2>
+        <form>
+          <ul className="form-list">
+            <li className="form-list__row">
+              <label>Name</label>
+              <input type="text" name required />
+            </li>
+            <li className="form-list__row">
+              <label>Card Number</label>
+              <div id="input--cc" className="creditcard-icon">
+                <input type="text" name="cc_number" required />
               </div>
-
-               <div className="cash">
-               <input type="radio" name="payment" id=""  value='cash on delevry'
-             onClick={(e) => {setPayType(e.target.value)}}/>
-             <h4>CASH ON DELEVRY</h4>
-               </div>
-          </div>
-
-         <div className="cardInfo">
-         <div className="row flex">
-            <div className="col">
-              <label htmlFor="" className="form-label">Card number</label>
-              <input type="text" name="" id="" className='form-control' />
-            </div>
-            <div className="col">
-            <label htmlFor="" className="form-label">Card Holder</label>
-              <input type="text" name="" id=""  className='form-control'/>
-            </div>
-          </div>
-
-          <div className="row flex">
-            <div className="col">
-            <label htmlFor="" className="form-label">Expiry date</label>
-              <input type="date" name="" id="" className='form-control'/>
-            </div>
-            <div className="col">
-            <label htmlFor="" className="form-label">CVC</label>
-              <input type="number" name="" id="" className='form-control'/>
-            </div>
-          </div>
-         </div>
-
-         <div className="d-grid">
-          <input type="button" value="Submit" className='btn '/>
-         </div>
+            </li>
+            <li className="form-list__row form-list__row--inline">
+              <div>
+                <label>Expiration Date</label>
+                <div className="form-list__input-inline">
+                  <input type="text" name="cc_month" placeholder="MM" pattern="\\d*" minLength={2} maxLength={2} required />
+                  <input type="text" name="cc_year" placeholder="YY" pattern="\\d*" minLength={2} maxLength={2} required />
+                </div>
+              </div>
+              <div>
+                <label>
+                  CVC
+                </label>
+                <input type="text" name="cc_cvc" placeholder={123} pattern="\\d*" minLength={3} maxLength={4} required />
+              </div>
+            </li>
+            <li className="form-list__row form-list__row--agree">
+              <label>
+                <input type="checkbox" name="save_cc" defaultChecked="checked" />
+                Save my card for future purchases
+              </label>
+            </li>
+          </ul>
         </form>
-      
-    </div>
+      </div> 
+    </div> 
+  </div> 
+</div>
 
-    <FlightInfo />
-   </div>
   )
 }
